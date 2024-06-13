@@ -12,73 +12,140 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/swiper.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
-  <nav class="navbar  navbar-expand-lg ">
-    <div class="container-fluid con" style="gap: 40px">
-      <a class="navbar-brand" href="index.html">
-        <img src="./images/logo.svg" alt="logo" />
-      </a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
-      </button>
+<body class="landingPage">
+  <div class="boxHeader">
+    <header>
+      <div class="con">
+        <div class="content">
+          <h2 class="titleHeader">Welcome to MDR boutique online store …</h2>
+          <div class="headerTop">
+            <div class="dropdown dropdownLang">
+              <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <p>En</p>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button>
+                    <p class="lang1">English</p>
+                    <p class="lang2">English</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <p class="lang1">Arabic</p>
+                    <p class="lang2">العربيه</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <p class="lang1">France</p>
+                    <p class="lang2">français</p>
+                  </button>
+                </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+            </div>
+            <div class="dropdown dropdownPrice">
+              <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <p>USD</p>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button>
+                    <p class="price1">USD</p>
+                    <p class="price2">USD</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <p class="price1">UAE</p>
+                    <p class="price2">الدرهم الاماراتي</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <p class="price1">SAR</p>
+                    <p class="price2">الريال السعودي</p>
+                  </button>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" href="product.html">ALL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">MEN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">WOMEN </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">KIDS </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">ACCESSORIES </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">BRANDS </a>
-          </li>
-        </ul>
-        <div class="endnav">
-          <div style="display: flex; gap: 14px">
-            <a href="contactUs.html" class="btn_page3 btn_nav"><svg id="MenuDots" xmlns="http://www.w3.org/2000/svg"
-                width="23.227" height="12.927" viewBox="0 0 23.227 12.927">
-                <g id="Group_8" data-name="Group 8">
-                  <path id="Path_3253" data-name="Path 3253"
-                    d="M114.214,5.182a2.617,2.617,0,0,1-2.576-2.622,2.591,2.591,0,0,1,5.182.06,2.616,2.616,0,0,1-2.606,2.562Z"
-                    transform="translate(-102.615 0.001)" fill="#242331" />
-                  <path id="Path_3254" data-name="Path 3254"
-                    d="M114.224,95.81a2.591,2.591,0,1,1-2.584,2.582A2.614,2.614,0,0,1,114.224,95.81Z"
-                    transform="translate(-102.618 -88.067)" fill="#242331" />
-                  <path id="Path_3255" data-name="Path 3255"
-                    d="M5.16,2.576a2.594,2.594,0,0,1-2.553,2.6A2.592,2.592,0,0,1,2.551,0,2.592,2.592,0,0,1,5.16,2.575Z"
-                    transform="translate(0.001 0.003)" fill="#242331" />
-                  <path id="Path_3256" data-name="Path 3256"
-                    d="M5.161,98.411A2.593,2.593,0,0,1,2.594,101a2.591,2.591,0,1,1,2.567-2.591Z"
-                    transform="translate(0 -88.075)" fill="#242331" />
-                  <path id="Path_3257" data-name="Path 3257"
-                    d="M228.711,2.593A2.58,2.58,0,1,1,226.118,0,2.592,2.592,0,0,1,228.711,2.593Z"
-                    transform="translate(-205.484 0.001)" fill="#242331" />
-                  <path id="Path_3258" data-name="Path 3258"
-                    d="M223.541,98.366A2.581,2.581,0,1,1,226.063,101,2.593,2.593,0,0,1,223.541,98.366Z"
-                    transform="translate(-205.475 -88.075)" fill="#242331" />
-                </g>
-              </svg>
-            </a>
-            <a href="#" class="btn_page2 btn_nav"><svg id="Cart_Icon" data-name="Cart Icon"
-                xmlns="http://www.w3.org/2000/svg" width="18.201" height="17.414" viewBox="0 0 18.201 17.414">
+              </ul>
+            </div>
+            <div class="auth">
+              <div class="imgUSer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29.454" height="29.454" viewBox="0 0 29.454 29.454">
+                  <g id="user" transform="translate(0)">
+                    <circle id="Avatar" cx="14.727" cy="14.727" r="14.727" transform="translate(0 0)" fill="#ededed" />
+                    <path id="Avatar_-_Outline" data-name="Avatar - Outline"
+                      d="M11.727-.845A12.572,12.572,0,1,0,24.3,11.727,12.572,12.572,0,0,0,11.727-.845m0-2.155A14.723,14.723,0,0,1,22.141,22.141,14.727,14.727,0,1,1,5.994-1.842,14.637,14.637,0,0,1,11.727-3Z"
+                      transform="translate(3 3)" fill="rgba(0,0,0,0.1)" />
+                    <path id="Path_4" data-name="Path 4"
+                      d="M286.31,166.9c0,3.257-2.251,4.345-5.028,4.345s-5.028-1.088-5.028-4.345,2.251-5.9,5.028-5.9,5.028,2.64,5.028,5.9"
+                      transform="translate(-266.555 -154.957)" fill="#c781b7" />
+                    <path id="Path_5" data-name="Path 5"
+                      d="M186.673,602.971a12.932,12.932,0,0,1-16.1,0c0-4.226,4.255-5.971,8.051-5.971s8.051,2.2,8.051,5.971"
+                      transform="translate(-163.894 -578.484)" fill="#c781b7" />
+                  </g>
+                </svg>
+              </div>
+              <a href="" class="linkAuth">Login </a>
+              <span>/</span>
+              <a href="" class="linkAuth">Register</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header2">
+      <div class="con">
+        <div class="content">
+          <h2 class="titleHeader2">Reflect & Shine: <span> Your Premier Store</span></h2>
+          <div class="endnav">
+            <div class="dropdown dropdownCat">
+              <button class="   dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg id="MenuDots" xmlns="http://www.w3.org/2000/svg" width="23.227" height="12.927"
+                  viewBox="0 0 23.227 12.927">
+                  <g id="Group_8" data-name="Group 8">
+                    <path id="Path_3253" data-name="Path 3253"
+                      d="M114.214,5.182a2.617,2.617,0,0,1-2.576-2.622,2.591,2.591,0,0,1,5.182.06,2.616,2.616,0,0,1-2.606,2.562Z"
+                      transform="translate(-102.615 0.001)" fill="#242331" />
+                    <path id="Path_3254" data-name="Path 3254"
+                      d="M114.224,95.81a2.591,2.591,0,1,1-2.584,2.582A2.614,2.614,0,0,1,114.224,95.81Z"
+                      transform="translate(-102.618 -88.067)" fill="#242331" />
+                    <path id="Path_3255" data-name="Path 3255"
+                      d="M5.16,2.576a2.594,2.594,0,0,1-2.553,2.6A2.592,2.592,0,0,1,2.551,0,2.592,2.592,0,0,1,5.16,2.575Z"
+                      transform="translate(0.001 0.003)" fill="#242331" />
+                    <path id="Path_3256" data-name="Path 3256"
+                      d="M5.161,98.411A2.593,2.593,0,0,1,2.594,101a2.591,2.591,0,1,1,2.567-2.591Z"
+                      transform="translate(0 -88.075)" fill="#242331" />
+                    <path id="Path_3257" data-name="Path 3257"
+                      d="M228.711,2.593A2.58,2.58,0,1,1,226.118,0,2.592,2.592,0,0,1,228.711,2.593Z"
+                      transform="translate(-205.484 0.001)" fill="#242331" />
+                    <path id="Path_3258" data-name="Path 3258"
+                      d="M223.541,98.366A2.581,2.581,0,1,1,226.063,101,2.593,2.593,0,0,1,223.541,98.366Z"
+                      transform="translate(-205.475 -88.075)" fill="#242331" />
+                  </g>
+                </svg>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="product.html">ALL</a></li>
+                <li><a class="dropdown-item" href="product.html">MEN </a></li>
+                <li><a class="dropdown-item" href="product.html">WOMEN </a></li>
+                <li><a class="dropdown-item" href="product.html">KIDS </a></li>
+                <li><a class="dropdown-item" href="product.html">ACCESSORIES </a></li>
+                <li><a class="dropdown-item" href="product.html">BRANDS </a></li>
+              </ul>
+            </div>
+            <a href="product.html" class="cartIcon">
+              <svg id="Cart_Icon" data-name="Cart Icon" xmlns="http://www.w3.org/2000/svg" width="18.201"
+                height="17.414" viewBox="0 0 18.201 17.414">
                 <g id="Group_9" data-name="Group 9">
                   <path id="Path_3259" data-name="Path 3259"
                     d="M6.753,11.42c.156.011.313.031.469.031q4.305,0,8.61,0a.657.657,0,0,1,.721.587.627.627,0,0,1-.548.684,1.75,1.75,0,0,1-.218.011q-4.285,0-8.57,0A2.326,2.326,0,0,1,4.8,10.81c-.159-.682-.31-1.366-.462-2.05q-.8-3.609-1.6-7.22a.289.289,0,0,0-.331-.261c-.563.007-1.127,0-1.69,0a.68.68,0,0,1-.538-.207A.6.6,0,0,1,.041.431.575.575,0,0,1,.57.009,20.544,20.544,0,0,1,2.734.035a1.38,1.38,0,0,1,1.23,1.134c.047.171.036.416.146.5s.354.036.538.036c4.13,0,8.259.01,12.388-.007A1.137,1.137,0,0,1,18.19,3.015c-.2,1.4-.338,2.812-.5,4.219-.08.684-.155,1.368-.243,2.051a1.1,1.1,0,0,1-1.093.964c-1.479.168-2.958.343-4.437.512q-2.159.247-4.32.49c-.281.032-.56.07-.84.105l0,.064Zm6.839-5.264h0c0,.431,0,.861,0,1.292a.635.635,0,0,0,.607.617.628.628,0,0,0,.637-.539,3.429,3.429,0,0,0,.016-.456c0-.716.005-1.432,0-2.147a.632.632,0,1,0-1.261,0c0,.411,0,.822,0,1.233Zm-6.8,0c0,.4,0,.8,0,1.194a.641.641,0,1,0,1.273,0q0-1.193,0-2.387a.64.64,0,1,0-1.272,0c0,.4,0,.8,0,1.194Zm4.66,0c0-.418,0-.835,0-1.253a.637.637,0,0,0-.613-.651.622.622,0,0,0-.639.622q-.015,1.282,0,2.564a.629.629,0,0,0,.632.632.639.639,0,0,0,.622-.663c0-.418,0-.835,0-1.253Z"
@@ -92,15 +159,135 @@
                 </g>
               </svg>
             </a>
+            <a href="#" class="favIcon">
+              <svg id="Fav_Icon" data-name="Fav Icon" xmlns="http://www.w3.org/2000/svg" width="17.878" height="17.869"
+                viewBox="0 0 17.878 17.869">
+                <path id="Path_3262" data-name="Path 3262"
+                  d="M17.867,8.907A8.938,8.938,0,1,1,8.881-.009a8.938,8.938,0,0,1,8.987,8.916ZM8.933,6.62c-.2-.221-.356-.4-.527-.567a2.318,2.318,0,0,0-1.6-.664A2.23,2.23,0,0,0,4.685,6.68a2.286,2.286,0,0,0,.379,2.513q1.586,1.726,3.177,3.447a.887.887,0,0,0,1.377,0c1.071-1.157,2.144-2.312,3.2-3.48a2.156,2.156,0,0,0,.527-1.944,2.111,2.111,0,0,0-1.508-1.712,2.3,2.3,0,0,0-2.336.5c-.192.17-.352.376-.57.612Z"
+                  transform="translate(0.01 0.01)" fill="#242331" />
+              </svg>
+            </a>
+            <div class="boxSearchNav">
+              <input type="search" name="" id="" placeholder="Search …">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17.436" height="17.208" viewBox="0 0 17.436 17.208">
+                <path id="navSearch"
+                  d="M17.439,16.028a3.083,3.083,0,0,1-.279.592,1.4,1.4,0,0,1-2.2.1q-1.868-1.864-3.728-3.734a.225.225,0,0,0-.349-.038,6.823,6.823,0,0,1-4.7,1.088,6.855,6.855,0,0,1-4.76-2.763A6.785,6.785,0,0,1,.016,6.663a6.865,6.865,0,0,1,2.28-4.8A6.829,6.829,0,0,1,6.057.074,6.871,6.871,0,0,1,9.986.648a7,7,0,0,1,3.233,3,6.805,6.805,0,0,1,.85,2.822,6.946,6.946,0,0,1-.974,4.182c-.071.119-.034.175.047.255,1.2,1.2,2.4,2.4,3.6,3.6a2.153,2.153,0,0,1,.695,1.078v.442ZM11.808,7.054a4.757,4.757,0,1,0-4.784,4.752,4.759,4.759,0,0,0,4.784-4.752Z"
+                  transform="translate(-0.003 -0.001)" fill="#242331" />
+              </svg>
+
+            </div>
+            <a href="#" class="instaIcon">
+              <svg id="Insta2" xmlns="http://www.w3.org/2000/svg" width="17.203" height="17.772"
+                viewBox="0 0 17.203 17.772">
+                <g id="Group_11" data-name="Group 11">
+                  <path id="Path_3264" data-name="Path 3264"
+                    d="M17.2,8.887c0,1.328.006,2.657,0,3.985a4.87,4.87,0,0,1-3.7,4.751,4.8,4.8,0,0,1-1.115.14q-3.777.018-7.554.005a4.859,4.859,0,0,1-4.755-4.1A5.681,5.681,0,0,1,0,12.823Q0,8.886,0,4.95A4.871,4.871,0,0,1,3.867.111a3.973,3.973,0,0,1,.863-.1Q8.6,0,12.462.006a4.867,4.867,0,0,1,4.661,4.068A7.516,7.516,0,0,1,17.2,5.081c.008,1.269,0,2.538,0,3.807ZM1.734,8.879c0,1.328,0,2.657,0,3.985a3.205,3.205,0,0,0,.063.668,3.11,3.11,0,0,0,3.129,2.512c2.445.018,4.891,0,7.336.006a3.194,3.194,0,0,0,3.209-3.26c-.033-2.61-.005-5.221-.013-7.832a3.784,3.784,0,0,0-.1-.881A3.163,3.163,0,0,0,12.181,1.72c-2.386.019-4.772,0-7.157.006a3.821,3.821,0,0,0-.593.032,3.141,3.141,0,0,0-2.7,3.155q0,1.983,0,3.966Z"
+                    transform="translate(0.001 -0.001)" fill="#242331" />
+                  <path id="Path_3265" data-name="Path 3265"
+                    d="M74.491,74.93a4.916,4.916,0,1,1-4.931,4.88A4.923,4.923,0,0,1,74.491,74.93Zm-3.2,4.905a3.183,3.183,0,1,0,3.193-3.172A3.171,3.171,0,0,0,71.291,79.835Z"
+                    transform="translate(-65.874 -70.96)" fill="#242331" />
+                  <path id="Path_3266" data-name="Path 3266"
+                    d="M240.754,63.192a.738.738,0,0,1-.745-.74.754.754,0,0,1,.749-.762.766.766,0,0,1,.752.746A.755.755,0,0,1,240.754,63.192Z"
+                    transform="translate(-227.292 -58.421)" fill="#242331" />
+                </g>
+              </svg>
+
+            </a>
+
+
           </div>
-          <button class="btn-lang" type="button">
-            <img src="./images/lang.svg" alt="lang" />
-            <p class="f-b">ع</p>
-          </button>
         </div>
       </div>
     </div>
-  </nav>
+    <div class="photoHeader">
+      <img src="./images/PhotoHeader.png" alt="photoHeader">
+    </div>
+    <div class="mainHeader">
+      <div class="con">
+        <div class="logoCenter">
+          <img src="./images/MainLogo.svg" alt="logo">
+        </div>
+        <div class="content">
+          <div class="part1">
+            <h2>
+              <span>Dress like you’re</span>
+              already famous.
+            </h2>
+            <p>Create an engaging, user-friendly e-commerce platform specializing in selling a wide range of mirror
+              products. The website should showcase various mirror types, including decorative mirrors, functional
+              mirrors, smart mirrors, and custom-made options. The design should reflect elegance and modernity,
+              appealing
+              to both individual consumers and interior designers.</p>
+            <a href="#" class="shopNow">SHOP NOW</a>
+          </div>
+          <div class="part2">
+            <div class="fade2">
+              <div>
+                <div class="boxImgHeader">
+                  <img src="./images/woman.png" />
+                </div>
+              </div>
+              <div>
+                <div class="boxImgHeader">
+                  <img src="./images/woman2.png" />
+                </div>
+              </div>
+              <div>
+                <div class="boxImgHeader">
+                  <img src="./images/woman.png" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="headerLinks">
+      <ul class="part part1">
+        <li>
+          <a href="#">ALL</a>
+        </li>
+        <li>
+          <a href="#">MEN</a>
+        </li>
+        <li>
+          <a href="#">WOMEN</a>
+        </li>
+        <li>
+          <a href="#">KIDS</a>
+        </li>
+        <li>
+          <a href="#">ACCESSORIES</a>
+        </li>
+        <li>
+          <a href="#">BRANDS</a>
+        </li>
+      </ul>
+      <ul class="part part2">
+        <li>
+          <a href="#">ALL</a>
+        </li>
+        <li>
+          <a href="#">MEN</a>
+        </li>
+        <li>
+          <a href="#">WOMEN</a>
+        </li>
+        <li>
+          <a href="#">KIDS</a>
+        </li>
+        <li>
+          <a href="#">ACCESSORIES</a>
+        </li>
+        <li>
+          <a href="#">BRANDS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <section class="products">
     <div class="content">
       <div class="headProducts">
@@ -1163,7 +1350,24 @@
   <script src="js/bootstrap.js"></script>
   <!-- Swiper JS -->
   <script src="js/swiper.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- Initialize Swiper -->
+  <script>
+    $(document).ready(function () {
+      $('.fade2').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+      });
+    });
+  </script>
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
@@ -1193,6 +1397,8 @@
       },
     });
   </script>
+
+
 </body>
 
 </html>

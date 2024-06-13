@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.454" height="29.454" viewBox="0 0 29.454 29.454">
+  <g id="user" transform="translate(0)">
+    <circle id="Avatar" cx="14.727" cy="14.727" r="14.727" transform="translate(0 0)" fill="#ededed"/>
+    <path id="Avatar_-_Outline" data-name="Avatar - Outline" d="M11.727-.845A12.572,12.572,0,1,0,24.3,11.727,12.572,12.572,0,0,0,11.727-.845m0-2.155A14.723,14.723,0,0,1,22.141,22.141,14.727,14.727,0,1,1,5.994-1.842,14.637,14.637,0,0,1,11.727-3Z" transform="translate(3 3)" fill="rgba(0,0,0,0.1)"/>
+    <path id="Path_4" data-name="Path 4" d="M286.31,166.9c0,3.257-2.251,4.345-5.028,4.345s-5.028-1.088-5.028-4.345,2.251-5.9,5.028-5.9,5.028,2.64,5.028,5.9" transform="translate(-266.555 -154.957)" fill="#c781b7"/>
+    <path id="Path_5" data-name="Path 5" d="M186.673,602.971a12.932,12.932,0,0,1-16.1,0c0-4.226,4.255-5.971,8.051-5.971s8.051,2.2,8.051,5.971" transform="translate(-163.894 -578.484)" fill="#c781b7"/>
+  </g>
+</svg>
