@@ -1978,6 +1978,7 @@ footer .copy p a {
 .pageProducts .content {
   display: flex;
   gap: 40px;
+  align-items: flex-start;
 }
 .pageProducts .content .part1 {
   max-width: 410px;
@@ -2822,6 +2823,8 @@ header .content .headerTop .auth span {
   padding: 12px 0px;
   max-width: 1920px;
   margin: auto;
+  position: relative;
+  z-index: 10;
 }
 .header2 .content {
   display: flex;
@@ -3026,3 +3029,62 @@ border-radius: 16px;
 }
 .headerLinks .part2 {
 }
+/*profile*/
+.profile{
+  max-width: 1920px;
+    margin: auto;
+}
+.profile .content{
+  display: flex;
+  gap: 130px;
+  align-items: flex-start;
+}
+.profile .content .partLinks{
+  margin-top: 130px;
+}
+.profile .content .partLinks ul{
+  border: 1px solid #CCCCCC;
+  display: flex;
+  flex-direction: column;
+width: 272px;
+}
+.profile .content .partLinks ul li{
+  border-bottom: 1px solid #CCCCCC;
+padding: 14px 17px 20px;
+}
+.profile .content .partLinks ul li:last-of-type{
+  border-bottom: none;
+}
+.profile .content .partLinks ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.profile .content .partLinks ul li  svg{
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+.profile .content .partLinks ul li  img{
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+.profile .content .partLinks ul li  p{
+  font-size: 24px;
+color: #4D4D4D;
+line-height: 30px;
+font-family: "PoppinsSemiBold";
+}
+.profile .content .partLinks ul li .logOut{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.profile .content .profileDetails{}
