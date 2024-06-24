@@ -2242,17 +2242,17 @@ footer .copy p a {
   margin-bottom: 18px;
   font-family: "PoppinsMedium";
 }
-.pageProducts .content .items .item .starsItem {
+ .starsItem {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-bottom: 13px;
 }
-.pageProducts .content .items .item .starsItem svg {
+ .starsItem svg {
   width: 18px;
   height: 18px;
 }
-.pageProducts .content .items .item .priceItem {
+.pageProducts .content .items .item .priceItem ,.productDetails .priceItem{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2261,13 +2261,13 @@ footer .copy p a {
   padding-bottom: 4px;
   max-width: 90%;
 }
-.pageProducts .content .items .item .priceItem .currentPrice {
+.pageProducts .content .items .item .priceItem .currentPrice,.productDetails .priceItem .currentPrice{
   font-size: 14px;
   line-height: 17px;
   color: var(--main_color);
   font-family: "PoppinsMedium";
 }
-.pageProducts .content .items .item .priceItem .sall {
+.pageProducts .content .items .item .priceItem .sall ,.productDetails .priceItem .sall{
   font-size: 15px;
   line-height: 18px;
   color: #888888;
@@ -2940,36 +2940,36 @@ header .content .headerTop .auth span {
   width: 1000px;
   height: 870px;
 }
-.mainHeader .content .part2 .boxImgHeader{
+.mainHeader .content .part2 .boxImgHeader {
   width: 100%;
   height: 100%;
 }
-.mainHeader .content .part2 .boxImgHeader img{
+.mainHeader .content .part2 .boxImgHeader img {
   max-width: 100%;
   height: 100%;
 }
-.mainHeader .content .part2 .fade2{
+.mainHeader .content .part2 .fade2 {
   height: 100%;
   width: 100%;
 }
-.mainHeader .content .part2 .slick-prev, .mainHeader .content .part2 .slick-next{
+.mainHeader .content .part2 .slick-prev,
+.mainHeader .content .part2 .slick-next {
   display: none !important;
 }
- .mainHeader .slick-dots li{
+.mainHeader .slick-dots li {
   border-radius: 50%;
-background-color: #DBDBDB;
-transition: 0.5s;
-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #dbdbdb;
+  transition: 0.5s;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.slick-dots li button::before{
+.slick-dots li button::before {
   display: none;
-
 }
-.mainHeader .slick-dots li.slick-active{
-background-color: var(--main_color);
-box-shadow: none;
-width: 40px;
-border-radius: 16px;
+.mainHeader .slick-dots li.slick-active {
+  background-color: var(--main_color);
+  box-shadow: none;
+  width: 40px;
+  border-radius: 16px;
 }
 .mainHeader .slick-dots {
   bottom: 34px;
@@ -3014,7 +3014,6 @@ border-radius: 16px;
   font-size: 20px;
   line-height: 30px;
   transition: 0.1s;
-
 }
 .headerLinks .part li:hover {
   transform: translateX(8px);
@@ -3030,61 +3029,253 @@ border-radius: 16px;
 .headerLinks .part2 {
 }
 /*profile*/
-.profile{
+.profile {
   max-width: 1920px;
-    margin: auto;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
-.profile .content{
+.profile .content {
   display: flex;
   gap: 130px;
   align-items: flex-start;
 }
-.profile .content .partLinks{
+.profile .content .partLinks {
   margin-top: 130px;
 }
-.profile .content .partLinks ul{
-  border: 1px solid #CCCCCC;
+.profile .content .partLinks ul {
+  border: 1px solid #cccccc;
   display: flex;
   flex-direction: column;
-width: 272px;
+  width: 272px;
 }
-.profile .content .partLinks ul li{
-  border-bottom: 1px solid #CCCCCC;
-padding: 14px 17px 20px;
+.profile .content .partLinks ul li {
+  border-bottom: 1px solid #cccccc;
+  padding: 14px 17px 20px;
 }
-.profile .content .partLinks ul li:last-of-type{
+.profile .content .partLinks ul li:last-of-type {
   border-bottom: none;
 }
-.profile .content .partLinks ul li a{
+.profile .content .partLinks ul li a {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   gap: 14px;
 }
-.profile .content .partLinks ul li  svg{
+.profile .content .partLinks ul li svg {
   max-height: 24px;
   width: auto;
   object-fit: contain;
 }
-.profile .content .partLinks ul li  img{
+.profile .content .partLinks ul li img {
   max-height: 24px;
   width: auto;
   object-fit: contain;
 }
-.profile .content .partLinks ul li  p{
+.profile .content .partLinks ul li p {
   font-size: 24px;
-color: #4D4D4D;
-line-height: 30px;
-font-family: "PoppinsSemiBold";
+  color: #4d4d4d;
+  line-height: 30px;
+  font-family: "PoppinsSemiBold";
 }
-.profile .content .partLinks ul li .logOut{
+.profile .content .partLinks ul li .logOut {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   gap: 14px;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.profile .content .profileDetails{}
+.profile .content .userinfo {
+}
+.profile .content .userinfo .imgUSer {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.profile .content .userinfo .imgUSer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile .content .userinfo .nameUSer {
+}
+.profile .content .userinfo .nameUSer h2 {
+  font-size: 32px;
+  line-height: 43px;
+  font-family: "PoppinsSemiBold";
+  margin-bottom: 8px;
+}
+.profile .content .userinfo .nameUSer h2 span {
+  font-size: 28px;
+  line-height: 43px;
+  color: #c781b7;
+  font-family: "PoppinsLight";
+}
+.profile .content .userinfo .nameUSer p {
+  font-size: 18px;
+  color: #808080;
+  font-family: "PoppinsLight";
+}
+.profile .content .userinfo .linksUser {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.profile .content .userinfo .linksUser li {
+}
+.profile .content .userinfo .linksUser li a {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.profile .content .userinfo .linksUser li button {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.profile .content .userinfo .linksUser li svg {
+  width: 54px;
+  height: auto;
+  max-height: 60px;
+  object-fit: contain;
+}
+.profile .content .userinfo .linksUser li p {
+  color: #4d4d4d;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "PoppinsSemiBold";
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .profile .content {
+    gap: 46px;
+  }
+  .profile .content .userinfo .linksUser li {
+    min-width: calc(50% - 20px);
+}
+.profile .content .userinfo .linksUser li button ,.profile .content .userinfo .linksUser li a{
+  width: 100%;
+}
+}
+@media (max-width: 768px) {
+  .profile .content .userinfo .nameUSer h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .profile .content .userinfo .nameUSer h2 span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .profile .content .userinfo .nameUSer p {
+    font-size: 16px;
+  }
+  .profile .content .userinfo .linksUser {
+    margin-top: 44px;
+    gap: 26px;
+  }
+  .profile .content .userinfo .linksUser li p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .profile .content .userinfo .linksUser li a {
+    gap: 10px;
+  }
+  .profile .content .userinfo .linksUser li svg {
+    width: 46px;
+    height: auto;
+  }
+  .profile .content .partLinks ul li p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .profile .content .partLinks ul li svg {
+    max-height: 18px;
+  }
+  .profile .content .partLinks ul li {
+    padding: 10px 12px 14px;
+  }
+  .profile .content .partLinks ul {
+    width: 220px;
+  }
+  .profile .content .userinfo .linksUser li {
+    min-width: calc(50% - 14px);
+}
+}
+@media (max-width: 700px) {
+  .profile .content {
+  
+    flex-direction: column;
+}
+.profile .content .partLinks {
+  margin-top: 0px;
+  width: 100%;
+}
+.profile .content .partLinks ul {
+
+  width: 100%;
+}
+}
+/*forYouProducts*/
+.forYouProducts{}
+.forYouProducts .content{}
+.forYouProducts .content h2{
+  font-size: 29px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "PoppinsBold";
+}
+.forYouProducts .content .items{
+  margin-top: 10px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+  gap: 30px;
+}
+.forYouProducts .content .items .item{
+  width: calc(25% - 20px);
+  min-width: calc(25% - 30px);
+  width: 333px;
+  height: auto;
+  aspect-ratio: 1/1.02;
+  max-width: 336px;
+  max-height: 340px;
+  background-color: white;
+  box-shadow: 3px 3px 15px #0000002f;
+  padding: 6px;
+}
+.forYouProducts .content .items .item .imgItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.forYouProducts .content .items .item .imgItem img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media(max-width:768px){
+  .forYouProducts .content .items .item {
+    width: calc(50% - 8px);
+}
+.forYouProducts .content .items {
+  gap: 16px;
+}
+}
