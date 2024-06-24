@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -203,14 +204,73 @@
           </div>
         </div>
       </nav>
+      <section class="pathLinks">
+        <div class="con">
+            <ul class="paths">
+                <li>
+                    <a href="">Home </a>
+                </li>
+                <li>
+                    /
+                </li>
+                <li>
+                    Accessories 
+                </li>
+                <li>
+                    /
+                </li>
+                <li>
+                    Watches 
+                </li>
+            </ul>
+        </div>
+    </section>
    <section class="productDetails">
     <div class="con">
       <div class="content">
-        <div class="imagesProduct"></div>
+        <div class="imagesProduct">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="imgItemSwiper">
+                  <img class="def_img" src="./images/itemWatch.png" alt="Watche">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgItemSwiper">
+                  <img class="def_img" src="./images/blog1.png" alt="Watche">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgItemSwiper">
+                  <img class="def_img" src="./images/itemWatch.png" alt="Watche">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgItemSwiper">
+                  <img class="def_img" src="./images/itemWatch.png" alt="Watche">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgItemSwiper">
+                  <img class="def_img" src="./images/itemWatch.png" alt="Watche">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgItemSwiper">
+                  <img class="def_img" src="./images/itemWatch.png" alt="Watche">
+                </div>
+              </div>
+             
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+        </div>
         <div class="infoProduct">
           <div class="part1">
             <div class="productImg">
-              <img src="./images/itemWatch.png" alt="">
+              <img id="img_show" src="./images/itemWatch.png" alt="">
             </div>
           </div>
           <div class="part2">
@@ -256,41 +316,51 @@
                 <p class="sall">$750</p>
             </div>
             <div class="selectColor">
-              <p>COLOR: Silver</p>
+              <p>COLOR: <span>Silver</span></p>
               <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="15.571" viewBox="0 0 15.243 15.571">
                 <path id="color" d="M13,18.571V6M7.5,13.071l5.5,5.5,5.5-5.5" transform="translate(-5.379 -4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
               </svg>
               
             </div>
+            
             <div class="methodProduct">
-              
+              <div class="colorsItem">
+                <div class="part red">
+
+                </div>
+                <div class="part green">
+
+                </div>
+              </div>
+              <div class="btnProduct">
+                <a href="#" class="shop"> shop</a>
+                <button class="payNow">Pay now</button>
+              </div>
+              <div class="counter">
+                  <form action="">
+
+             
+                <input
+                  type="number"
+                  class="num-product"
+                  id="num-product"
+                  readonly
+                  value="1"
+                />
+                <div class="btnCount">
+                  <button class="product-add" type="button" id="product-add">+</button>
+                  <button class="product-del" type="button" id="product-del">-</button>
+                
+                </div>
+              </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
    </section>
-    <section class="pathLinks">
-        <div class="con">
-            <ul class="paths">
-                <li>
-                    <a href="">Home </a>
-                </li>
-                <li>
-                    /
-                </li>
-                <li>
-                    Accessories 
-                </li>
-                <li>
-                    /
-                </li>
-                <li>
-                    Watches 
-                </li>
-            </ul>
-        </div>
-    </section>
+  
    <section class="forYouProducts"> 
     <div class="con">
       <div class="content">
@@ -470,6 +540,55 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+     <script>
+      const img_show = document.getElementById("img_show");
+      const def_img = document.getElementsByClassName("def_img");
+      const ahmed = function () {
+        img_show.src = this.src;
+        img_show.srcset = this.srcset;
+      };
+      for (i = 0; i <= def_img.length; i++) {
+        def_img[i].addEventListener("click", ahmed);
+      }
+     
+    </script>
+    <script>
+ var del = document.getElementById("product-del");
+      const add = document.getElementById("product-add");
+      const val = document.getElementById("num-product").value;
+      console.log(val);
+      console.log(document.getElementById("num-product"));
+      var num = 1;
+      console.log(typeof val);
+
+      del.addEventListener("click", function () {
+        if (num <= 1) {
+          num = 1;
+        } else {
+          num--;
+        }
+        document.getElementById("num-product").value = num;
+      });
+
+      add.addEventListener("click", function () {
+        num += 1;
+        document.getElementById("num-product").value = num;
+      });
+      val = num;
+    </script>
 </body>
 
 </html>

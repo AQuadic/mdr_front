@@ -3279,3 +3279,104 @@ justify-content: center;
   gap: 16px;
 }
 }
+/*productDetails*/
+.productDetails{}
+.productDetails .content{
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.productDetails .content .imagesProduct{
+  width: 300px;
+  height: 600px;
+}
+.productDetails .content .imagesProduct .imgItemSwiper{
+  width: 100%;
+  height: 100%;
+}
+.productDetails .content .imagesProduct .imgItemSwiper img{
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.productDetails .content .infoProduct{
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+.productDetails .content .infoProduct .part1{
+  flex: 1;
+  width: calc(50% - 50px);
+  max-width: calc(50% - 50px);
+  height: 400px;
+  padding: 8px;
+}
+.productDetails .content .infoProduct .part1 .productImg{
+  width: 100%;
+  height: 100%;
+}
+.productDetails .content .infoProduct .part1 .productImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+.productDetails .content .infoProduct .part2{
+  flex: 1;
+}
+.productDetails .content .infoProduct .part2 h2{
+  color: black;
+  margin-bottom: 10px;
+  font-family: "PoppinsBold";
+
+}
+.productDetails .content .infoProduct .part2 h3{
+  color: #4d4d4d;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "PoppinsLight";
+
+
+  margin-bottom: 20px;
+}
+.productDetails .content .infoProduct .part2 .starsItem{
+  margin-bottom: 30px;
+}
+.productDetails .content .infoProduct .part2 .starsItem svg{
+  width: 24px;
+    height: 24px;
+}
+.productDetails .content .infoProduct .part2 .priceItem{
+  justify-content: flex-start;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+.productDetails .content .infoProduct .part2 .priceItem .currentPrice{
+  font-size: 22px;
+}
+.productDetails .content .infoProduct .part2 .priceItem .sall{
+  font-size: 22px;
+}
+.productDetails .content .infoProduct .part2 .selectColor{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.productDetails .content .infoProduct .part2 .selectColor p{
+  font-size: 18px;
+
+}
+.productDetails .content .infoProduct .part2 .selectColor p span{
+  font-family: "PoppinsSemiBold";
+
+}
+
+.productDetails .content .infoProduct .part2 .selectColor svg{
+  height: 14px;
+}
+.productDetails .swiper-vertical {
+ 
+  height: 100%;
+}
