@@ -3287,8 +3287,9 @@ justify-content: center;
   gap: 30px;
 }
 .productDetails .content .imagesProduct{
-  width: 300px;
-  height: 600px;
+  width: 314px;
+  height: 690px;
+  min-width: 300px;
 }
 .productDetails .content .imagesProduct .imgItemSwiper{
   width: 100%;
@@ -3305,13 +3306,15 @@ justify-content: center;
   display: flex;
   align-items: flex-start;
   gap: 50px;
+  flex-wrap: wrap;
 }
 .productDetails .content .infoProduct .part1{
   flex: 1;
   width: calc(50% - 50px);
   max-width: calc(50% - 50px);
-  height: 400px;
+  height: 690px;
   padding: 8px;
+  aspect-ratio: 1/1;
 }
 .productDetails .content .infoProduct .part1 .productImg{
   width: 100%;
@@ -3321,56 +3324,61 @@ justify-content: center;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center center;
+  object-position: top center;
 }
 .productDetails .content .infoProduct .part2{
   flex: 1;
 }
 .productDetails .content .infoProduct .part2 h2{
-  color: black;
+  color: #4D4D4D;
   margin-bottom: 10px;
   font-family: "PoppinsBold";
-
+font-size: 50px;
+line-height: 54px;
 }
 .productDetails .content .infoProduct .part2 h3{
-  color: #4d4d4d;
-  font-size: 22px;
-  line-height: 30px;
-  font-family: "PoppinsLight";
-
-
+  color: #4D4D4D;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: "PoppinsMedium";
   margin-bottom: 20px;
 }
 .productDetails .content .infoProduct .part2 .starsItem{
   margin-bottom: 30px;
 }
 .productDetails .content .infoProduct .part2 .starsItem svg{
-  width: 24px;
-    height: 24px;
+  width: 28px;
+    height: 28px;
 }
 .productDetails .content .infoProduct .part2 .priceItem{
   justify-content: flex-start;
   gap: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .productDetails .content .infoProduct .part2 .priceItem .currentPrice{
-  font-size: 22px;
+  font-size: 30px;
 }
 .productDetails .content .infoProduct .part2 .priceItem .sall{
-  font-size: 22px;
+  font-size: 30px;
 }
 .productDetails .content .infoProduct .part2 .selectColor{
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-bottom: 8px;
 }
 .productDetails .content .infoProduct .part2 .selectColor p{
-  font-size: 18px;
+  font-size: 30px;
+  line-height: 38px;
+  color: #4D4D4D;
+  font-family: "PoppinsLight";
 
 }
 .productDetails .content .infoProduct .part2 .selectColor p span{
-  font-family: "PoppinsSemiBold";
-
+  font-size: 30px;
+  line-height: 38px;
+  color: #4D4D4D;
+  font-family: "PoppinsMedium";
 }
 
 .productDetails .content .infoProduct .part2 .selectColor svg{
@@ -3379,4 +3387,268 @@ justify-content: center;
 .productDetails .swiper-vertical {
  
   height: 100%;
+}
+.productDetails .content .infoProduct .part2 .methodProduct{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem .part{
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border: 2px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem .part span{
+
+display: block;
+width: 100%;
+height: 100%;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem .part.active{
+  border: 2px solid var(--main_color);
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem .part.red span{
+  background-color: #D5D5D5;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem .part.gray span{
+  background-color: #5C5C5C;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .btnProduct{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 168px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .btnProduct .addTo{
+  width: 100%;
+  height: 54px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  line-height: 29px;
+  font-family: "PoppinsBold";
+background-color: #B48E5D;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .btnProduct .payNow{
+  width: 100%;
+  height: 54px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  line-height: 29px;
+  font-family: "PoppinsBold";
+background-color: #37B221;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter{
+
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter h4{
+  font-size: 31px;
+  line-height: 38px;
+  margin-bottom: 24px;
+  color: #4D4D4D;
+  font-family: "PoppinsLight";
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter form{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 94px;
+  height: 58px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter .btnCount{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 40px;
+  height: 100%;
+  padding: 4px 0px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter .num-product{
+  background-color: transparent;
+  color: #4D4D4D;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+border: none;
+outline: none;
+max-width: fit-content;
+height: 100%;
+width: 66px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter .product-add{
+  border: none;
+  border-bottom: 1px solid #E6E6E6 ;
+flex: 1;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+outline: none;
+padding-bottom: 4px;
+height: calc(50% );
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter .product-del{
+  border: none;
+  flex: 1;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  height: calc(50% - 4px);
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter button svg{
+  height: 100%;
+}
+.productDetails .content .infoProduct .part2 .propItem{
+  font-size: 30px;
+  line-height: 38px;
+  color: #4D4D4D;
+  font-family: "PoppinsLight";
+margin-bottom: 0;
+}
+.productDetails .content .infoProduct .part2 .propItem span{
+  font-size: 30px;
+  line-height: 38px;
+  color: #4D4D4D;
+  font-family: "PoppinsMedium";
+  padding: 0px 6px;
+}
+.productDetails .content .infoProduct .part2 .size{}
+.productDetails .content .infoProduct .part2 .stock{
+  margin-top: 80px;
+}
+@media(max-width:1200px){
+  .productDetails .content .infoProduct .part2 h2 {
+
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 36px;
+}
+.productDetails .content .infoProduct .part2 h3 {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.productDetails .content .infoProduct .part2 .starsItem {
+  margin-bottom: 18px;
+}
+.productDetails .content .infoProduct .part2 .starsItem svg {
+  width: 20px;
+  height: 20px;
+}
+.productDetails .content .infoProduct .part2 .priceItem {
+  gap: 50px;
+  margin-bottom: 18px;
+}
+.productDetails .content .infoProduct .part2 .selectColor {
+ 
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.productDetails .content .infoProduct .part2 .selectColor p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.productDetails .content .infoProduct .part2 .selectColor p span{
+  font-size: 20px;
+  line-height: 30px;
+}
+.productDetails .content .infoProduct .part2 .selectColor svg {
+  height: 12px;
+  width: auto;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .colorsItem .part {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border: 1px solid #707070;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .btnProduct {
+ 
+  gap: 14px;
+  width: 150px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .btnProduct .payNow ,.productDetails .content .infoProduct .part2 .methodProduct .btnProduct .addTo{
+  font-family: "PoppinsMedium";
+  height: 50px;
+  border-radius: 14px;
+  font-size: 16px;
+  line-height: 29px;
+ 
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter h4 {
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 8px;
+
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter .num-product {
+  
+  font-size: 20px;
+  line-height: 34px;
+  width: 66px;
+}
+.productDetails .content .infoProduct .part2 .methodProduct .counter form {
+  gap: 4px;
+  width: 94px;
+  height: 46px;
+}
+.productDetails .content .infoProduct .part2 .propItem{
+  font-size: 20px;
+  line-height: 30px;
+ 
+}
+.productDetails .content .infoProduct .part2 .propItem span{
+  font-size: 20px;
+  line-height: 30px;
+ 
+}
+.productDetails .content .infoProduct .part2 .stock {
+  margin-top: 20px;
+}
+.productDetails .content .infoProduct {
+  gap: 20px;
+}
+.productDetails .content .imagesProduct {
+ 
+  min-width: 220px;
+}
+}
+@media(max-width:992px){
+  .productDetails .content .infoProduct .part1 {
+   
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    
+}
+.productDetails .content .infoProduct {
+  flex-direction: column;
+  width: 100%;
+}
 }
