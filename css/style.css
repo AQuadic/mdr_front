@@ -3828,59 +3828,59 @@ margin-bottom: 0;
 .myOrder{}
 .myOrder .content{}
 .myOrder .content .table-responsive{}
-.myOrder .content .table{
+.tableItems{
   max-width: 996px;
   margin: 50px 0px;
 }
-.myOrder .content .table thead{
+.tableItems thead{
   min-width: 600px;
 }
-.myOrder .content .table thead tr{
+.tableItems thead tr{
   margin-bottom: 20px;
 }
-.myOrder .content .table thead tr th{
+.tableItems thead tr th{
   font-size: 20px;
   color: #000000;
   line-height: 27px;
 }
-.myOrder .content .table tbody{
+.tableItems tbody{
   padding: 22px 0px;
   border-top: 0.5px solid #707070;
   border-bottom: 0.5px solid #707070;
 }
-.myOrder .content .table tbody tr{
+.tableItems tbody tr{
   border: none;
   margin-bottom: 30px;
 }
-.myOrder .content .table tbody tr th{
+.tableItems tbody tr th{
   place-content: center;
   width: 410px;
   border: none;
 }
-.myOrder .content .table tbody tr th .itemTeble{
+.tableItems tbody tr th .itemTeble{
   display: flex;
   align-items: flex-start;
   gap: 24px;
   width: max-content;
   
 }
-.myOrder .content .table tbody tr th .itemTeble .imgItem{
+.tableItems tbody tr th .itemTeble .imgItem{
   width: 112px;
   height: 112px;
   aspect-ratio: 1/1;
   box-shadow:  3px 3px 15px #0000002f;
   padding: 2px;
 }
-.myOrder .content .table tbody tr th .itemTeble .imgItem img{
+.tableItems tbody tr th .itemTeble .imgItem img{
   width:100%;
   height:100%;
   object-fit: contain;
   object-position: top center;
 }
-.myOrder .content .table tbody tr th .itemTeble .infoItem{
+.tableItems tbody tr th .itemTeble .infoItem{
   max-width: 178px;
 }
-.myOrder .content .table tbody tr th .itemTeble .infoItem h2{
+.tableItems tbody tr th .itemTeble .infoItem h2{
   font-size: 19px;
   line-height: 20px;
   color: #4D4D4D;
@@ -3888,7 +3888,7 @@ margin-bottom: 0;
   font-family: "PoppinsBold";
 
 }
-.myOrder .content .table tbody tr th .itemTeble .infoItem h3{
+.tableItems tbody tr th .itemTeble .infoItem h3{
   font-size: 11px;
   line-height: 13px;
   color: #4D4D4D;
@@ -3896,26 +3896,27 @@ margin-bottom: 0;
   font-family: "PoppinsMedium";
 
 }
-.myOrder .content .table tbody tr td{
+.tableItems tbody tr td{
   place-content: center;
 
   border: none;
 }
-.myOrder .content .table tbody tr td.peice{
+.tableItems tbody tr td.peice{
   font-size: 20px;
   color: var(--main_color);
   font-family: "PoppinsMedium";
 line-height: 25px;
 }
-.myOrder .content .table tbody tr td .counter{
+.tableItems tbody tr td .counter{
   width: 70px;
 }
-.myOrder .content .table tbody tr td .counter .num-product{
+.tableItems tbody tr td .counter .num-product{
   font-size: 20px;
   width: 40px;
+  max-width: 50px;
 
 }
-.myOrder .content .table tbody tr td .counter form {
+.tableItems tbody tr td .counter form {
 
   width: 70px;
   height: 46px;
@@ -3923,31 +3924,123 @@ line-height: 25px;
 }
 
 @media(max-width:768px){
-  .myOrder .content .table tbody tr th .itemTeble .infoItem h2 {
+  .tableItems tbody tr th .itemTeble .infoItem h2 {
     font-size: 16px;
     line-height: 19px;
 }
-.myOrder .content .table tbody tr th .itemTeble .infoItem {
+.tableItems tbody tr th .itemTeble .infoItem {
   max-width: 140px;
 }
-.myOrder .content .table tbody tr th .itemTeble .imgItem {
+.tableItems tbody tr th .itemTeble .imgItem {
   width: 90px;
   height: 90px;
   padding: 1px;
 }
-.myOrder .content .table tbody tr th .itemTeble {
+.tableItems tbody tr th .itemTeble {
   gap: 10px;
 }
-.myOrder .content .table tbody tr td.peice {
+.tableItems tbody tr td.peice {
   font-size: 16px;
   line-height: 20px;
 }
-.myOrder .content .table tbody tr td .counter .num-product {
+.tableItems tbody tr td .counter .num-product {
   font-size: 16px;
   width: 40px;
 }
-.myOrder .content .table thead tr th {
+.tableItems thead tr th {
   font-size: 16px;
   line-height: 22px;
 }
+}
+/*cart*/
+.cart{
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.cart .content{
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.cart .content .titleCart{
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: "PoppinsBold";
+}
+.cart .content .shoppingCart{
+  flex: 1;
+}
+.cart .content .shoppingCart .headShop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.cart .content .shoppingCart .headShop .countItems{
+  font-size: 18px;
+  color: #4d4d4d;
+  font-family: "PoppinsLight";
+  display: block;
+}
+.cart .content .shoppingCart .tableItems{}
+.cart .content .shoppingCart .tableItems .deleteItem{}
+.cart .content .summary{
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+}
+.cart .content .summary ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 0px;
+  border-top: 1px solid #4D4D4D;
+}
+.cart .content .summary ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cart .content .summary ul li h3{
+  font-size: 26px;
+  font-family: "PoppinsMedium";
+color: black;
+
+}
+.cart .content .summary ul li .peice{
+  font-size: 20px;
+  color: var(--main_color);
+  font-family: "PoppinsMedium";
+line-height: 25px;
+}
+.cart .content .summary ul li .form-select{
+  min-width: 100%;
+  margin-bottom: 60px;
+}
+.cart .content .summary ul li.totalSummary{
+  border-top: 1px solid #4D4D4D;
+padding-top: 14px;
+}
+
+.cart .content .summary .CheckOut{
+  background-color: rgb(16, 144, 16);
+border: none;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 66px;
+width: 310px;
+color: white;
+font-size: 30px;
+border-radius: 12px;
+font-family: "PoppinsSemiBold";
+margin: 10px auto 0px;
 }
