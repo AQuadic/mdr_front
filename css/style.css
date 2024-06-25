@@ -3460,17 +3460,17 @@ background-color: #B48E5D;
   font-family: "PoppinsBold";
 background-color: #37B221;
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter{
+ .counter{
 
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter h4{
+ .counter h4{
   font-size: 31px;
   line-height: 38px;
   margin-bottom: 24px;
   color: #4D4D4D;
   font-family: "PoppinsLight";
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter form{
+ .counter form{
   display: flex;
   align-items: center;
   gap: 4px;
@@ -3479,7 +3479,7 @@ background-color: #37B221;
   border: 1px solid #E6E6E6;
   border-radius: 8px;
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter .btnCount{
+ .counter .btnCount{
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -3487,7 +3487,7 @@ background-color: #37B221;
   height: 100%;
   padding: 4px 0px;
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter .num-product{
+ .counter .num-product{
   background-color: transparent;
   color: #4D4D4D;
   font-size: 28px;
@@ -3499,7 +3499,7 @@ max-width: fit-content;
 height: 100%;
 width: 66px;
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter .product-add{
+ .counter .product-add{
   border: none;
   border-bottom: 1px solid #E6E6E6 ;
 flex: 1;
@@ -3511,7 +3511,7 @@ outline: none;
 padding-bottom: 4px;
 height: calc(50% );
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter .product-del{
+ .counter .product-del{
   border: none;
   flex: 1;
   background-color: transparent;
@@ -3521,7 +3521,7 @@ height: calc(50% );
   outline: none;
   height: calc(50% - 4px);
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter button svg{
+ .counter button svg{
   height: 100%;
 }
 .productDetails .content .infoProduct .part2 .propItem{
@@ -3601,19 +3601,19 @@ margin-bottom: 0;
   line-height: 29px;
  
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter h4 {
+ .counter h4 {
   font-size: 20px;
   line-height: 33px;
   margin-bottom: 8px;
 
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter .num-product {
+ .counter .num-product {
   
   font-size: 20px;
   line-height: 34px;
   width: 66px;
 }
-.productDetails .content .infoProduct .part2 .methodProduct .counter form {
+ .counter form {
   gap: 4px;
   width: 94px;
   height: 46px;
@@ -3650,5 +3650,304 @@ margin-bottom: 0;
 .productDetails .content .infoProduct {
   flex-direction: column;
   width: 100%;
+}
+}
+/*shopLine*/
+.shopLine{
+  margin-bottom: 24px;
+}
+.shopLine .content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.shopLine .content::before {
+  content: "";
+  height: 4px;
+  width: calc(50% - 80px);
+  top: 18px;
+  position: absolute;
+  background-color: var(--main_color);
+  left: 82px;
+}
+.shopLine .content::after {
+  content: "";
+  height: 2px;
+  width: calc(50% - 80px);
+  top: 18px;
+  position: absolute;
+  background-color: black;
+  right: 82px;
+}
+.shopLine .content .part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+
+}
+.shopLine .content .part .numberShop{
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--main_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--main_color);
+  font-size: 25px;
+  font-family: "PoppinsSemiBold";
+  background-color: white;
+  transition: 0.3s;
+}
+.shopLine .content .part h3{
+  text-align: center;
+  max-width: 130px;
+  font-family: "PoppinsSemiBold";
+  font-size: 20px;
+}
+.shopLine .content .part.active{}
+.shopLine .content .part.active .numberShop{
+  background-color: var(--main_color);
+  color: white;
+
+}
+.shopLine .content .part.active h3{}
+.shopLine .content  .line{
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: red;
+  flex: 1;
+}
+.shopLine .content  .line.active{}
+@media(max-width:768px){
+  .shopLine .content .part h3 {
+    font-size: 14px;
+}
+.shopLine .content .part .numberShop {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--main_color);
+  font-size: 14px;
+}
+.shopLine .content::before {
+  height: 3px;
+  width: calc(50% - 66px);
+  top: 14px;
+  left: 60px;
+}
+.shopLine .content::after {
+
+  width: calc(50% - 66px);
+  top: 14px;
+  right: 60px;
+}
+}
+@media(max-width:500px){
+  .shopLine .content .part h3 {
+    font-size: 12px;
+}
+.shopLine .content .part .numberShop {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--main_color);
+  font-size: 14px;
+}
+.shopLine .content::before {
+  height: 3px;
+  width: calc(50% - 60px);
+  top: 14px;
+  left: 50px;
+}
+.shopLine .content::after {
+
+  width: calc(50% - 60px);
+  top: 14px;
+  right: 50px;
+}
+}
+/*placeOrder*/
+.placeOrder{
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.placeOrder ul{
+  border: 1px solid #707070;
+  width: 422px;
+}
+.placeOrder ul li{
+ 
+  display: flex;
+  align-items: center;justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #707070;
+
+}
+.placeOrder ul li.lineRight h3{
+  border-right: 1px solid #707070;
+
+}
+.placeOrder ul li{}
+.placeOrder ul li:last-of-type{
+  border-bottom: none;
+}
+.placeOrder ul li h3{
+  font-family: "PoppinsSemiBold";
+  font-size: 20px;
+  color:black;
+  line-height: 25px;
+  padding: 12px 16px;
+  margin-bottom: 0;
+}
+.placeOrder ul li p{
+  font-size: 20px;
+  color: var(--main_color);
+  line-height: 25px;
+  font-family: "PoppinsMedium";
+  padding: 13px 20px;
+}
+.placeOrder .btnPlace{
+  background-color: #37B221;
+  color: white;
+  height: 40px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "PoppinsBold";
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+/*myOrder*/
+.myOrder{}
+.myOrder .content{}
+.myOrder .content .table-responsive{}
+.myOrder .content .table{
+  max-width: 996px;
+  margin: 50px 0px;
+}
+.myOrder .content .table thead{
+  min-width: 600px;
+}
+.myOrder .content .table thead tr{
+  margin-bottom: 20px;
+}
+.myOrder .content .table thead tr th{
+  font-size: 20px;
+  color: #000000;
+  line-height: 27px;
+}
+.myOrder .content .table tbody{
+  padding: 22px 0px;
+  border-top: 0.5px solid #707070;
+  border-bottom: 0.5px solid #707070;
+}
+.myOrder .content .table tbody tr{
+  border: none;
+  margin-bottom: 30px;
+}
+.myOrder .content .table tbody tr th{
+  place-content: center;
+  width: 410px;
+  border: none;
+}
+.myOrder .content .table tbody tr th .itemTeble{
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: max-content;
+  
+}
+.myOrder .content .table tbody tr th .itemTeble .imgItem{
+  width: 112px;
+  height: 112px;
+  aspect-ratio: 1/1;
+  box-shadow:  3px 3px 15px #0000002f;
+  padding: 2px;
+}
+.myOrder .content .table tbody tr th .itemTeble .imgItem img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  object-position: top center;
+}
+.myOrder .content .table tbody tr th .itemTeble .infoItem{
+  max-width: 178px;
+}
+.myOrder .content .table tbody tr th .itemTeble .infoItem h2{
+  font-size: 19px;
+  line-height: 20px;
+  color: #4D4D4D;
+  margin-bottom: 5px;
+  font-family: "PoppinsBold";
+
+}
+.myOrder .content .table tbody tr th .itemTeble .infoItem h3{
+  font-size: 11px;
+  line-height: 13px;
+  color: #4D4D4D;
+  margin: 0;
+  font-family: "PoppinsMedium";
+
+}
+.myOrder .content .table tbody tr td{
+  place-content: center;
+
+  border: none;
+}
+.myOrder .content .table tbody tr td.peice{
+  font-size: 20px;
+  color: var(--main_color);
+  font-family: "PoppinsMedium";
+line-height: 25px;
+}
+.myOrder .content .table tbody tr td .counter{
+  width: 70px;
+}
+.myOrder .content .table tbody tr td .counter .num-product{
+  font-size: 20px;
+  width: 40px;
+
+}
+.myOrder .content .table tbody tr td .counter form {
+
+  width: 70px;
+  height: 46px;
+
+}
+
+@media(max-width:768px){
+  .myOrder .content .table tbody tr th .itemTeble .infoItem h2 {
+    font-size: 16px;
+    line-height: 19px;
+}
+.myOrder .content .table tbody tr th .itemTeble .infoItem {
+  max-width: 140px;
+}
+.myOrder .content .table tbody tr th .itemTeble .imgItem {
+  width: 90px;
+  height: 90px;
+  padding: 1px;
+}
+.myOrder .content .table tbody tr th .itemTeble {
+  gap: 10px;
+}
+.myOrder .content .table tbody tr td.peice {
+  font-size: 16px;
+  line-height: 20px;
+}
+.myOrder .content .table tbody tr td .counter .num-product {
+  font-size: 16px;
+  width: 40px;
+}
+.myOrder .content .table thead tr th {
+  font-size: 16px;
+  line-height: 22px;
 }
 }
