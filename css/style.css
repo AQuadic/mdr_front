@@ -4085,92 +4085,95 @@ header .content .headerTop .auth span {
   margin: 10px auto 0px;
 }
 /*ceckOut*/
-.checkOut{}
-.checkOut .titleCart{
+.checkOut {
+}
+.checkOut .titleCart {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 12px;
   color: black;
   font-family: "PoppinsSemiBold";
 }
-.checkOut .content{
+.checkOut .content {
   display: flex;
   align-items: flex-start;
   gap: 50px;
 }
-.checkOut .content .dataCheckOut{
+.checkOut .content .dataCheckOut {
   flex: 1;
-
 }
-.checkOut .content .dataCheckOut .formCeckOut{}
+.checkOut .content .dataCheckOut .formCeckOut {
+}
 .checkOut .content .dataCheckOut .formCeckOut form {
   justify-content: space-between;
 }
-.checkOut .content .dataCheckOut .formCeckOut .form-group{}
-.checkOut .content .dataCheckOut .formCeckOut .form-group label{
+.checkOut .content .dataCheckOut .formCeckOut .form-group {
+}
+.checkOut .content .dataCheckOut .formCeckOut .form-group label {
   font-size: 20px;
   line-height: 27px;
-  color: #B3B3B3;
+  color: #b3b3b3;
   font-family: "PoppinsLight";
   margin-bottom: 7px;
-
 }
-.checkOut .content .dataCheckOut .formCeckOut .form-group label span{
-  color: #C781B7 ;
+.checkOut .content .dataCheckOut .formCeckOut .form-group label span {
+  color: #c781b7;
   font-size: 20px;
   line-height: 27px;
   font-family: "PoppinsLight";
 }
-.checkOut .content .dataCheckOut .formCeckOut .form-group .form-control{
+.checkOut .content .dataCheckOut .formCeckOut .form-group .form-control {
   margin-bottom: 6px;
-  border: 1px solid #CCCCCC;
-  background-color: #FAFAFA;
-height: 43px;
-border-radius: 6px; 
+  border: 1px solid #cccccc;
+  background-color: #fafafa;
+  height: 43px;
+  border-radius: 6px;
 }
-.checkOut .content .dataCheckOut .formCeckOut .form-group input::placeholder{
+.checkOut .content .dataCheckOut .formCeckOut .form-group input::placeholder {
   font-size: 13px;
   line-height: 18px;
-  color: #CCCCCC;
+  color: #cccccc;
   font-family: "PoppinsLight";
-
 }
-.checkOut .content .dataCheckOut .formCeckOut .form-group textarea{
+.checkOut .content .dataCheckOut .formCeckOut .form-group textarea {
   margin-bottom: 6px;
-  border: 1px solid #CCCCCC;
-  background-color: #FAFAFA;
-height: 43px;
-border-radius: 6px; 
-width: 100%;
-min-height: 100px;
-outline: none;
-padding: 8px;
+  border: 1px solid #cccccc;
+  background-color: #fafafa;
+  height: 43px;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 100px;
+  outline: none;
+  padding: 8px;
 }
-.checkOut .content .dataCheckOut .formCeckOut .form-group textarea::placeholder{
+.checkOut
+  .content
+  .dataCheckOut
+  .formCeckOut
+  .form-group
+  textarea::placeholder {
   font-size: 13px;
   line-height: 18px;
-  color: #CCCCCC;
+  color: #cccccc;
   font-family: "PoppinsLight";
-
 }
 .checkOut .content .dataCheckOut .formCeckOut .form-control {
- 
   color: #8c8c8c;
   background-color: #fafafa;
 }
-.checkOut .content .dataCheckOut .formCeckOut  .form-check{
+.checkOut .content .dataCheckOut .formCeckOut .form-check {
   display: flex;
   align-items: flex-start;
   gap: 8px;
   padding: 0;
   margin: 0;
 }
-.checkOut .content .dataCheckOut .formCeckOut  .form-check label{
+.checkOut .content .dataCheckOut .formCeckOut .form-check label {
   font-size: 14px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-family: "PoppinsSemiBold";
 }
-.checkOut .content .dataCheckOut .formCeckOut  .form-check input{
+.checkOut .content .dataCheckOut .formCeckOut .form-check input {
   min-width: 19px;
   width: 19px;
   height: 19px;
@@ -4178,101 +4181,100 @@ padding: 8px;
   margin: 0;
   background-color: none;
 }
-.checkOut .content .allYourOrder{
-min-width: 454px;
-width: 454px;
-height:   auto;
-
+.checkOut .content .allYourOrder {
+  min-width: 454px;
+  width: 454px;
+  height: auto;
 }
-.checkOut .content .allYourOrder .itemsCheckOut{
-  height:   420px;
+.checkOut .content .allYourOrder .itemsCheckOut {
+  height: 420px;
 }
-.checkOut .content .allYourOrder  .swiper-wrapper{
-  height:   420px !important;
+.checkOut .content .allYourOrder .swiper-wrapper {
+  height: 420px !important;
 }
-.checkOut .content .allYourOrder  .swiper-slide{
- 
+.checkOut .content .allYourOrder .swiper-slide {
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 {
   display: flex;
   align-items: flex-start;
   gap: 16px;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 .imgItem{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 .imgItem {
   width: 112px;
   height: 112px;
   box-shadow: 3px 3px 15px #00000029;
   background-color: white;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 .imgItem img{
+.checkOut
+  .content
+  .allYourOrder
+  .itemsCheckOut
+  .itemSwiper
+  .part1
+  .imgItem
+  img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 .infoItem{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 .infoItem {
   max-width: 178px;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h2{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h2 {
   font-size: 19px;
   line-height: 17px;
   font-family: "PoppinsBold";
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h3{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h3 {
   font-size: 11px;
   line-height: 13 px;
   font-family: "PoppinsMedium";
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .partCounter{
+.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .partCounter {
   min-width: 64px;
   width: 64px;
 }
 
-
-
-
-
-.checkOut .content  .counter form {
-
+.checkOut .content .counter form {
   width: 64px;
   height: 40px;
-  
 }
 .checkOut .content .counter .num-product {
   font-size: 20px;
   line-height: 26px;
   min-width: 38px;
 }
-footer .checkFooter{
+footer .checkFooter {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 570px;
 }
-footer .checkFooter .form-check{
+footer .checkFooter .form-check {
   display: flex;
   align-items: flex-start;
   gap: 8px;
   padding: 0;
-    margin: 0;
+  margin: 0;
 }
-footer .checkFooter .form-check input{
+footer .checkFooter .form-check input {
   width: 19px;
-  min-width:19px;
+  min-width: 19px;
   height: 19px;
   padding: 0;
-    margin: 0;
+  margin: 0;
 }
-footer .checkFooter .form-check label{
+footer .checkFooter .form-check label {
   font-size: 14px;
   color: #999999;
   line-height: 21px;
@@ -4285,12 +4287,12 @@ footer.orderFooter .content {
   gap: 40px;
   flex-wrap: wrap;
 }
-@media(max-width:1400px){
-  .checkOut .content .dataCheckOut .formCeckOut .form-group.col-md-5{
+@media (max-width: 1400px) {
+  .checkOut .content .dataCheckOut .formCeckOut .form-group.col-md-5 {
     width: 49.666667%;
   }
 }
-@media(max-width:1200px){
+@media (max-width: 1200px) {
   .checkOut .content .allYourOrder {
     min-width: 410px;
     width: 410px;
@@ -4298,51 +4300,48 @@ footer.orderFooter .content {
   }
 }
 
-@media(max-width:992px){
-
+@media (max-width: 992px) {
   .checkOut .content {
     flex-direction: column;
-}
-.checkOut .content .allYourOrder {
-  min-width: auto;
-  width: 100%;
-  height: auto;
-}
+  }
+  .checkOut .content .allYourOrder {
+    min-width: auto;
+    width: 100%;
+    height: auto;
+  }
 }
 
-@media(max-width:768px){
-  .checkOut .content .dataCheckOut .formCeckOut .form-group.col-md-5{
+@media (max-width: 768px) {
+  .checkOut .content .dataCheckOut .formCeckOut .form-group.col-md-5 {
     width: 100%;
   }
   .checkOut .content .dataCheckOut .formCeckOut .form-group label {
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 4px;
-}
-.checkOut .content .dataCheckOut .formCeckOut .form-group .form-control { 
-  height: 40px;
-
-}
-.checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h2 {
-  font-size: 17px;
- 
-}
+  }
+  .checkOut .content .dataCheckOut .formCeckOut .form-group .form-control {
+    height: 40px;
+  }
+  .checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h2 {
+    font-size: 17px;
+  }
 }
 /*loginPage*/
-.loginPage{
-position: relative;
-width: 100%;
-background-image: url("../images/woman.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+.loginPage {
+  position: relative;
+  width: 100%;
+  background-image: url("../images/woman.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-padding-top: 110px;
-min-height: 100vh;
+  padding-top: 110px;
+  min-height: 100vh;
 }
-.loginPage::before{
+.loginPage::before {
   position: absolute;
-  content: '';
+  content: "";
   inset: 0;
   height: 100%;
   width: 100%;
@@ -4350,30 +4349,35 @@ min-height: 100vh;
   -webkit-backdrop-filter: blur(11px);
   backdrop-filter: blur(11px);
 }
-.loginPage .content{
-position: relative;
-background-color: white;
-max-width: 1280px;
-margin: auto;
-z-index: 2;
-display: flex;
-border-radius: 14px ;
+.loginPage .content {
+  position: relative;
+  background-color: white;
+  max-width: 1280px;
+  margin: auto;
+  z-index: 2;
+  display: flex;
+  border-radius: 14px;
 }
-.loginPage .content .partForm{
+.loginPage .content .partForm {
   padding: 50px 36px 32px;
   max-width: 50%;
   flex: 1;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
-.loginPage .content .partForm .headLoin{
+.loginPage.signIn .content .partForm form {
+  margin-top: 80px;
+  position: relative;
+  z-index: 5;
+}
+.loginPage .content .partForm .headLoin {
   color: #242331;
   text-align: center;
   display: block;
-  margin: auto; 
+  margin: auto;
   font-size: 16px;
   line-height: 25px;
 }
-.loginPage .content .partForm h2{
+.loginPage .content .partForm h2 {
   margin-top: 44px;
   text-align: center;
   color: var(--main_color);
@@ -4382,31 +4386,28 @@ border-radius: 14px ;
   margin-bottom: 16px;
   font-family: "PoppinsBold";
 }
-.loginPage .content .partForm form{
+.loginPage .content .partForm form {
   display: flex;
   flex-direction: column;
-gap: 16px;
-width: 100%;
-
+  gap: 16px;
+  width: 100%;
 }
-.loginPage .content .partForm form .partInput{
+.loginPage .content .partForm form .partInput {
   display: flex;
   flex-direction: column;
   gap: 7px;
-
 }
-.loginPage .content .partForm form .partInput label{
+.loginPage .content .partForm form .partInput label {
   font-size: 16px;
   line-height: 25px;
   color: #242331;
   font-family: "PoppinsRegular";
-
 }
-.loginPage .content .partForm form .partInput input{
+.loginPage .content .partForm form .partInput input {
   height: 62px;
   width: 100%;
   background-color: white;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 8px;
   padding: 18px;
   font-size: 16px;
@@ -4414,18 +4415,17 @@ width: 100%;
   color: #242331;
   font-family: "PoppinsRegular";
 }
-.loginPage .content .partForm form .partInput input::placeholder{
-  padding: 18px;
+.loginPage .content .partForm form .partInput input::placeholder {
   font-size: 16px;
   line-height: 25px;
   color: #242331;
   font-family: "PoppinsLight";
 }
-.loginPage .content .partForm form .partLogInOrGoogle{
+.loginPage .content .partForm form .partLogInOrGoogle {
   margin-top: 40px;
 }
-.loginPage .content .partForm form .partLogInOrGoogle input{
-  background-color: #C89E61;
+.loginPage .content .partForm form .partLogInOrGoogle input {
+  background-color: #c89e61;
   color: white;
   display: flex;
   align-items: center;
@@ -4433,16 +4433,15 @@ width: 100%;
   border: none;
   outline: none;
 
-  margin: auto; 
+  margin: auto;
   width: 78%;
   height: 54px;
   font-size: 20px;
   line-height: 30px;
   font-family: "PoppinsBold";
-border-radius: 5px;
-
+  border-radius: 5px;
 }
-.loginPage .content .partForm form .partLogInOrGoogle .or{
+.loginPage .content .partForm form .partLogInOrGoogle .or {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4450,64 +4449,60 @@ border-radius: 5px;
   max-width: 340px;
   margin: 10px auto;
   padding: 0px 10px;
-
 }
-.loginPage .content .partForm form .partLogInOrGoogle .or p{
+.loginPage .content .partForm form .partLogInOrGoogle .or p {
   font-size: 18px;
   line-height: 28px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-family: "PoppinsRegular";
-
 }
-.loginPage .content .partForm form .partLogInOrGoogle .or span{
+.loginPage .content .partForm form .partLogInOrGoogle .or span {
   display: block;
   height: 1px;
   flex: 1;
   width: 100%;
   background-color: #707070;
 }
-.loginPage .content .partForm form .partLogInOrGoogle .googleLog{
+.loginPage .content .partForm form .partLogInOrGoogle .googleLog {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   height: 54px;
   border-radius: 5px;
   max-width: 390px;
   margin: auto;
 }
-.loginPage .content .partForm form .partLogInOrGoogle .googleLog img{
+.loginPage .content .partForm form .partLogInOrGoogle .googleLog img {
   width: 28px;
   height: 28px;
   min-width: 28px;
 }
-.loginPage .content .partForm form .partLogInOrGoogle .googleLog p{
+.loginPage .content .partForm form .partLogInOrGoogle .googleLog p {
   font-size: 18px;
   line-height: 25px;
   color: #242331;
   font-family: "PoppinsMedium";
-  
 }
 
-.loginPage .content .partForm .endLogGIn{
+.loginPage .content .endLogGIn {
   font-size: 16px;
   line-height: 25px;
   color: #242331;
   font-family: "PoppinsBold";
   margin-top: 80px;
   text-align: center;
-  
 }
-.loginPage .content .partForm .endLogGIn span{
+.loginPage .content .endLogGIn span {
   font-size: 16px;
   line-height: 25px;
   color: #242331;
   font-family: "PoppinsLight";
 }
 
-.loginPage .content .part1{
+.loginPage .content .part1 {
   max-width: 50%;
   flex: 1;
   width: 50%;
@@ -4517,19 +4512,298 @@ border-radius: 5px;
   padding: 100px 50px 50px;
   position: relative;
 }
-.loginPage .content .part1 .logoLogin{
+.loginPage .content .part1 .logoLogin {
   width: 180px;
   height: auto;
-
 }
-.loginPage .content .part1 .logoLogin img{
+.loginPage .content .part1 .logoLogin img {
   width: 100%;
   height: auto;
 }
-.loginPage .content .part1 .bigImg{
+.loginPage .content .part1 .bigImg {
   position: absolute;
   bottom: 0;
   right: -130px;
   transform: rotateY(180deg);
 }
-.loginPage .content .part1 .bigImg{}
+.loginPage .content .part1 .bigImg img {
+  height: 100%;
+}
+.loginPage .content .haveAcount {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PoppinsRegular";
+  color: #4d4d4d;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 180px;
+}
+.loginPage .content .haveAcount a {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PoppinsSemiBold";
+  color: var(--main_color);
+}
+.loginPage.signIn .part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 50px 50px;
+}
+.loginPage.signIn .part1 .bigImgSignIn {
+  width: 240px;
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: flex-end;
+}
+.loginPage.signIn .part1 .bigImgSignIn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff8c;
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(11px);
+  z-index: 2;
+  border: 1px solid white;
+}
+.loginPage.signIn .part1 .bigImgSignIn .imgContent {
+  height: 48%;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 0;
+}
+.loginPage.signIn .part1 .bigImgSignIn img {
+  height: 100%;
+  width: auto;
+}
+.loginPage.signIn .part1 h2 {
+  position: relative;
+  z-index: 5;
+  font-size: 45px;
+  line-height: 57px;
+  color: #242331;
+  max-width: 388px;
+  text-align: center;
+  margin: auto;
+  font-family: "PoppinsMedium";
+}
+.loginPage.signIn .part1 h2 span {
+  font-size: 45px;
+  line-height: 57px;
+  color: #242331;
+  font-family: "PoppinsBold";
+}
+.loginPage.signIn .part1 .logoLogin {
+  position: relative;
+  z-index: 5;
+}
+.loginPage.signIn .part1 .endLogGIn {
+  position: relative;
+  z-index: 5;
+}
+.loginPage.signIn .partForm .endLogGIn{
+  display: none;
+}
+.loginPage .partForm .partRemember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 40px;
+  flex-wrap: wrap;
+}
+.loginPage .partForm .partRemember .form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+.loginPage .partForm .partRemember .form-check label {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  color: #4d4d4d;
+  font-family: "PoppinsRegular";
+}
+.loginPage .partForm .partRemember .form-check input {
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+}
+.loginPage .partForm .partRemember a {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PoppinsSemiBold";
+  color: var(--main_color);
+}
+@media (max-width: 992px) {
+  .loginPage.signIn .part1 .bigImgSignIn {
+   
+    display: none;
+}
+.loginPage.signIn .part1 .endLogGIn {
+
+  display: none;
+}
+.loginPage.signIn .partForm .endLogGIn {
+  display: block;
+  margin-top: 0;
+}
+.loginPage .content .haveAcount {
+ 
+  margin-top: 26px;
+  margin-bottom: 50px;
+}
+.loginPage.signIn .part1 h2 {
+ 
+  font-size: 30px;
+  line-height: 38px;
+  
+}
+.loginPage.signIn .part1 h2 span{
+ 
+  font-size: 30px;
+  line-height: 38px;
+  
+}
+
+}
+@media (max-width: 768px) {
+  .loginPage .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .loginPage .content .partForm {
+    max-width: 100%;
+    border-radius: 14px;
+    padding: 10px 16px 28px;
+  }
+  .loginPage .content .part1 {
+    padding: 50px 16px 20px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .loginPage .content .part1 .bigImg {
+    display: none;
+  }
+  .loginPage {
+    padding-top: 60px;
+
+    padding-bottom: 60px;
+  }
+  .loginPage .content .partForm h2 {
+    margin-top: 16px;
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 14px;
+  }
+  .loginPage .content .partForm .headLoin {
+    font-size: 14px;
+  }
+  .loginPage .content .partForm form .partInput input {
+    height: 50px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .loginPage .content .partForm form .partInput label {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle input {
+    width: 60%;
+    height: 48px;
+    font-size: 16px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle {
+    margin-top: 26px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle .or p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle .or {
+    max-width: 290px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle .googleLog p {
+    font-size: 16px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle .googleLog {
+    gap: 8px;
+    width: 60%;
+    height: 50px;
+    max-width: 350px;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle .googleLog img {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+  .loginPage .content .endLogGIn {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 50px;
+  }
+  .loginPage .content .endLogGIn span {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .loginPage .content .part1 .logoLogin {
+    width: 150px;
+    height: auto;
+}
+.loginPage .partForm .partRemember .form-check label {
+  font-size: 16px;
+  line-height: 27px;
+ 
+}
+.loginPage .partForm .partRemember a {
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+.loginPage .partForm .partRemember {
+  gap: 10px 16px;
+}
+}
+@media (max-width: 500px) {
+  .loginPage .content .partForm form .partLogInOrGoogle input {
+    width: 82%;
+  }
+  .loginPage .content .partForm form .partLogInOrGoogle .googleLog {
+    width: 82%;
+  }
+  .loginPage .content .partForm h2 {
+    font-size: 23px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .loginPage .content .partForm .headLoin {
+    font-size: 12px;
+  }
+  .loginPage.signIn .part1 h2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+.loginPage.signIn .part1 h2 span{
+  font-size: 24px;
+  line-height: 34px;
+}
+.loginPage.signIn .content .partForm form {
+  margin-top: 40px;
+
+}
+.loginPage .partForm .partRemember .form-check label {
+  font-size: 14px;
+  line-height: 25px;
+ 
+}
+}
