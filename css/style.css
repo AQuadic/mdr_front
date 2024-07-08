@@ -56,6 +56,7 @@ input::placeholder {
   --black_color: #000000;
   --Text-black_color: #132615;
   --black_color-2: #242331;
+  --linear-color:linear-gradient(141deg, #B48E5D 0%, #8E6F3F 19%, #C89E61 39%, #ECBB77 70%, #BF965C 85%, #8E6F3F 100%);
 }
 h1 {
   font-family: "PoppinsBold";
@@ -245,7 +246,8 @@ html::-webkit-scrollbar-track {
 }
 /*blogs*/
 .blogs {
-  margin-bottom: 50px;
+  max-width: 1920px;
+  margin: 0px auto 50px;
 }
 .blogs .content {
 }
@@ -551,6 +553,8 @@ html::-webkit-scrollbar-track {
 /*contactUS*/
 .contactUS {
   padding: 34px 0px;
+  max-width: 1920px;
+  margin: auto;
 }
 .contactUS h2 {
   text-align: center;
@@ -2927,7 +2931,7 @@ header .content .headerTop .auth span {
 }
 
 .mainHeader .content .part1 .shopNow {
-  background-color: #b48e5d;
+  background: var(--linear-color);
   color: white;
   display: flex;
   align-items: center;
@@ -3236,6 +3240,8 @@ header .content .headerTop .auth span {
 }
 /*forYouProducts*/
 .forYouProducts {
+  max-width: 1920px;
+  margin: auto;
 }
 .forYouProducts .content {
 }
@@ -3288,6 +3294,8 @@ header .content .headerTop .auth span {
 }
 /*productDetails*/
 .productDetails {
+  max-width: 1920px;
+  margin: auto;
 }
 .productDetails .content {
   display: flex;
@@ -3475,7 +3483,7 @@ header .content .headerTop .auth span {
   font-size: 19px;
   line-height: 29px;
   font-family: "PoppinsBold";
-  background-color: #b48e5d;
+  background: var(--linear-color);
 }
 .productDetails
   .content
@@ -3701,7 +3709,8 @@ header .content .headerTop .auth span {
 }
 /*shopLine*/
 .shopLine {
-  margin-bottom: 24px;
+  max-width: 1920px;
+  margin: 0px auto 24px;
 }
 .shopLine .content {
   display: flex;
@@ -3871,6 +3880,8 @@ header .content .headerTop .auth span {
 }
 /*myOrder*/
 .myOrder {
+  max-width: 1920px;
+    margin: auto;
 }
 .myOrder .content {
 }
@@ -3996,8 +4007,8 @@ header .content .headerTop .auth span {
 }
 /*cart*/
 .cart {
-  margin-bottom: 60px;
-  margin-top: 40px;
+  max-width: 1920px;
+    margin: 40px auto 60px;
 }
 .cart .content {
   display: flex;
@@ -4089,6 +4100,8 @@ header .content .headerTop .auth span {
 }
 /*ceckOut*/
 .checkOut {
+  max-width: 1920px;
+  margin: auto;
 }
 .checkOut .titleCart {
   font-size: 20px;
@@ -4428,7 +4441,7 @@ footer.orderFooter .content {
   margin-top: 40px;
 }
 .loginPage .content .partForm form .partLogInOrGoogle input {
-  background-color: #c89e61;
+  background: var(--linear-color);
   color: white;
   display: flex;
   align-items: center;

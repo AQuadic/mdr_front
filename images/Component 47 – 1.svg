@@ -1,0 +1,16 @@
+<svg id="Component_47_1" data-name="Component 47 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="54" viewBox="0 0 172 54">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1.642" y2="2.021" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b48e5d"/>
+      <stop offset="0.19" stop-color="#8e6f3f"/>
+      <stop offset="0.39" stop-color="#c89e61"/>
+      <stop offset="0.55" stop-color="#efbd79"/>
+      <stop offset="0.63" stop-color="#feca82"/>
+      <stop offset="0.7" stop-color="#ecbb77"/>
+      <stop offset="0.85" stop-color="#bf965c"/>
+      <stop offset="1" stop-color="#8e6f3f"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_21" data-name="Rectangle 21" width="172" height="54" rx="16" fill="url(#linear-gradient)"/>
+  <text id="SHOP_NOW" data-name="SHOP NOW" transform="translate(31 34)" fill="#fff" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">SHOP NOW</tspan></text>
+</svg>
