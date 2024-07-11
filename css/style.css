@@ -56,7 +56,15 @@ input::placeholder {
   --black_color: #000000;
   --Text-black_color: #132615;
   --black_color-2: #242331;
-  --linear-color:linear-gradient(141deg, #B48E5D 0%, #8E6F3F 19%, #C89E61 39%, #ECBB77 70%, #BF965C 85%, #8E6F3F 100%);
+  --linear-color: linear-gradient(
+    141deg,
+    #b48e5d 0%,
+    #8e6f3f 19%,
+    #c89e61 39%,
+    #ecbb77 70%,
+    #bf965c 85%,
+    #8e6f3f 100%
+  );
 }
 h1 {
   font-family: "PoppinsBold";
@@ -2295,6 +2303,12 @@ footer .copy p a {
     padding: 10px 6px;
     gap: 24px 24px;
   }
+  .pageProducts .content {
+    flex-direction: column;
+  }
+  .pageProducts .content .part1 {
+    max-width: 100%;
+  }
 }
 
 /*==================================start navbar==============================*/
@@ -3289,7 +3303,13 @@ header .content .headerTop .auth span {
     width: calc(50% - 8px);
   }
   .forYouProducts .content .items {
+    margin-bottom: 50px;
     gap: 16px;
+  }
+  .forYouProducts .content h2 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 16px;
   }
 }
 /*productDetails*/
@@ -3301,6 +3321,7 @@ header .content .headerTop .auth span {
   display: flex;
   align-items: flex-start;
   gap: 30px;
+  margin-bottom: 40px;
 }
 .productDetails .content .imagesProduct {
   width: 314px;
@@ -3707,6 +3728,83 @@ header .content .headerTop .auth span {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .productDetails .content .infoProduct .part2 h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .productDetails .content .infoProduct .part2 h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+  .productDetails .content .infoProduct .part2 .starsItem svg {
+    width: 18px;
+    height: 18px;
+  }
+  .productDetails .content .infoProduct .part2 .priceItem .currentPrice {
+    font-size: 22px;
+  }
+  .productDetails .content .infoProduct .part2 .priceItem .sall {
+    font-size: 22px;
+  }
+  .productDetails .content .infoProduct .part2 .priceItem {
+    gap: 24px;
+    margin-bottom: 14px;
+  }
+  .productDetails .content .infoProduct .part2 .selectColor p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .productDetails .content .infoProduct .part2 .selectColor p span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .productDetails
+    .content
+    .infoProduct
+    .part2
+    .methodProduct
+    .colorsItem
+    .part {
+    width: 26px;
+    height: 26px;
+  }
+  .productDetails .content .infoProduct .part1 {
+    height: 300px;
+  }
+  .productDetails
+    .content
+    .infoProduct
+    .part2
+    .methodProduct
+    .btnProduct
+    .payNow,
+  .productDetails
+    .content
+    .infoProduct
+    .part2
+    .methodProduct
+    .btnProduct
+    .addTo {
+    height: 46px;
+  }
+  .counter h4 {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .counter .num-product {
+    font-size: 16px;
+    line-height: 28px;
+    width: 66px;
+  }
+  .productDetails .content .infoProduct .part2 .propItem,
+  .productDetails .content .infoProduct .part2 .propItem span {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 /*shopLine*/
 .shopLine {
   max-width: 1920px;
@@ -3831,7 +3929,8 @@ header .content .headerTop .auth span {
 .placeOrder {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 14px 33px;
+  max-width: 100%;
 }
 .placeOrder ul {
   border: 1px solid #707070;
@@ -3878,10 +3977,29 @@ header .content .headerTop .auth span {
   padding: 6px 10px;
   border-radius: 6px;
 }
+@media (max-width: 768px) {
+  .placeOrder {
+    flex-wrap: wrap;
+  }
+  .placeOrder ul li h3 {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 12px;
+  }
+  .placeOrder ul li p {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 14px;
+  }
+  .placeOrder .btnPlace {
+    height: 40px;
+    font-size: 14px;
+  }
+}
 /*myOrder*/
 .myOrder {
   max-width: 1920px;
-    margin: auto;
+  margin: auto;
 }
 .myOrder .content {
 }
@@ -3889,7 +4007,7 @@ header .content .headerTop .auth span {
 }
 .tableItems {
   max-width: 996px;
-  margin: 50px 0px;
+  margin: 50px 0px 14px;
 }
 .tableItems thead {
   min-width: 600px;
@@ -4004,11 +4122,14 @@ header .content .headerTop .auth span {
     font-size: 16px;
     line-height: 22px;
   }
+  .tableItems {
+    margin: 14px 0px 10px;
+  }
 }
 /*cart*/
 .cart {
   max-width: 1920px;
-    margin: 40px auto 60px;
+  margin: 40px auto 60px;
 }
 .cart .content {
   display: flex;
@@ -4025,6 +4146,7 @@ header .content .headerTop .auth span {
 }
 .cart .content .shoppingCart {
   flex: 1;
+  max-width: 100%;
 }
 .cart .content .shoppingCart .headShop {
   display: flex;
@@ -4097,6 +4219,50 @@ header .content .headerTop .auth span {
   border-radius: 12px;
   font-family: "PoppinsSemiBold";
   margin: 10px auto 0px;
+}
+@media(max-width:992px){
+  .cart .content {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .cart .content .shoppingCart {
+  width: 100%;
+}
+.cart .content .summary {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.cart .content .summary ul li .form-select {
+  min-width: 100%;
+  margin-bottom: 30px;
+}
+.cart .content .summary ul li h3 {
+  font-size: 18px;
+}
+.cart .content .summary ul li .peice {
+  font-size: 18px;
+}
+.cart .content .summary .CheckOut {
+  height: 54px;
+  width: 200px;
+  font-size: 20px;
+}
+}
+
+@media(max-width:768px){
+  .cart .content .titleCart {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+.cart .content .shoppingCart .headShop .countItems {
+  font-size: 16px;
+}
+.tableItems tbody tr th .itemTeble .infoItem h2 {
+  font-size: 14px;
+  line-height: 18px;
+}
 }
 /*ceckOut*/
 .checkOut {
@@ -4215,7 +4381,6 @@ header .content .headerTop .auth span {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  flex-wrap: wrap;
 }
 .checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 {
   display: flex;
@@ -4325,6 +4490,9 @@ footer.orderFooter .content {
     width: 100%;
     height: auto;
   }
+  footer.orderFooter .content {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4340,7 +4508,14 @@ footer.orderFooter .content {
     height: 40px;
   }
   .checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 h2 {
-    font-size: 17px;
+    font-size: 14px;
+  }
+  .checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 .imgItem {
+    width: 90px;
+    height: 90px;
+  }
+  .checkOut .content .allYourOrder .itemsCheckOut .itemSwiper .part1 {
+    gap: 6px;
   }
 }
 /*loginPage*/
@@ -4622,7 +4797,7 @@ footer.orderFooter .content {
   position: relative;
   z-index: 5;
 }
-.loginPage.signIn .partForm .endLogGIn{
+.loginPage.signIn .partForm .endLogGIn {
   display: none;
 }
 .loginPage .partForm .partRemember {
@@ -4661,35 +4836,27 @@ footer.orderFooter .content {
 }
 @media (max-width: 992px) {
   .loginPage.signIn .part1 .bigImgSignIn {
-   
     display: none;
-}
-.loginPage.signIn .part1 .endLogGIn {
-
-  display: none;
-}
-.loginPage.signIn .partForm .endLogGIn {
-  display: block;
-  margin-top: 0;
-}
-.loginPage .content .haveAcount {
- 
-  margin-top: 26px;
-  margin-bottom: 50px;
-}
-.loginPage.signIn .part1 h2 {
- 
-  font-size: 30px;
-  line-height: 38px;
-  
-}
-.loginPage.signIn .part1 h2 span{
- 
-  font-size: 30px;
-  line-height: 38px;
-  
-}
-
+  }
+  .loginPage.signIn .part1 .endLogGIn {
+    display: none;
+  }
+  .loginPage.signIn .partForm .endLogGIn {
+    display: block;
+    margin-top: 0;
+  }
+  .loginPage .content .haveAcount {
+    margin-top: 26px;
+    margin-bottom: 50px;
+  }
+  .loginPage.signIn .part1 h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .loginPage.signIn .part1 h2 span {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 @media (max-width: 768px) {
   .loginPage .content {
@@ -4775,20 +4942,18 @@ footer.orderFooter .content {
   .loginPage .content .part1 .logoLogin {
     width: 150px;
     height: auto;
-}
-.loginPage .partForm .partRemember .form-check label {
-  font-size: 16px;
-  line-height: 27px;
- 
-}
-.loginPage .partForm .partRemember a {
-  font-size: 14px;
-  line-height: 24px;
-  
-}
-.loginPage .partForm .partRemember {
-  gap: 10px 16px;
-}
+  }
+  .loginPage .partForm .partRemember .form-check label {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .loginPage .partForm .partRemember a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .loginPage .partForm .partRemember {
+    gap: 10px 16px;
+  }
 }
 @media (max-width: 500px) {
   .loginPage .content .partForm form .partLogInOrGoogle input {
@@ -4808,18 +4973,16 @@ footer.orderFooter .content {
   .loginPage.signIn .part1 h2 {
     font-size: 24px;
     line-height: 34px;
-}
-.loginPage.signIn .part1 h2 span{
-  font-size: 24px;
-  line-height: 34px;
-}
-.loginPage.signIn .content .partForm form {
-  margin-top: 40px;
-
-}
-.loginPage .partForm .partRemember .form-check label {
-  font-size: 14px;
-  line-height: 25px;
- 
-}
+  }
+  .loginPage.signIn .part1 h2 span {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .loginPage.signIn .content .partForm form {
+    margin-top: 40px;
+  }
+  .loginPage .partForm .partRemember .form-check label {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
