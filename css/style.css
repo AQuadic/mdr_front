@@ -2727,12 +2727,12 @@ header .content .headerTop .dropdownLang ul li button .lang2 {
   font-family: "PoppinsRegular";
   transition: 0.5s;
 }
-header .content .headerTop .dropdownLang ul li button:hover .lang1 {
+/* header .content .headerTop .dropdownLang ul li button:hover .lang1 {
   display: none;
 }
 header .content .headerTop .dropdownLang ul li button:hover .lang2 {
   display: block;
-}
+} */
 header .content .headerTop .dropdownPrice {
   background-color: transparent;
 }
@@ -2798,13 +2798,13 @@ header .content .headerTop .dropdownPrice ul li button .price2 {
   font-family: "PoppinsRegular";
   transition: 0.3s;
 }
-header .content .headerTop .dropdownPrice ul li button:hover .price1 {
+/* header .content .headerTop .dropdownPrice ul li button:hover .price1 {
   opacity: 0;
   display: none;
 }
 header .content .headerTop .dropdownPrice ul li button:hover .price2 {
   opacity: 1;
-}
+} */
 header .content .headerTop .auth {
   display: flex;
   align-items: center;
@@ -4716,6 +4716,8 @@ footer.orderFooter .content {
   bottom: 0;
   right: -130px;
   transform: rotateY(180deg);
+  left:-13px
+  
 }
 .loginPage .content .part1 .bigImg img {
   height: 100%;
