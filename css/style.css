@@ -3018,6 +3018,12 @@ header .content .headerTop .auth span {
   padding: 150px 20px 110px;
   z-index: 5;
 }
+
+[dir="rtl"] .headerLinks {
+  left: 0;
+  right: initial;
+}
+
 .headerLinks .part {
   width: 200px;
   display: flex;
@@ -4715,9 +4721,14 @@ footer.orderFooter .content {
   position: absolute;
   bottom: 0;
   right: -130px;
-  transform: rotateY(180deg);
-  left:-13px
-  
+  transform: rotateY(180deg);  
+}
+
+[dir="rtl"] .loginPage .content .part1 .bigImg {
+  position: absolute;
+  bottom: 0;
+  right: -250px;
+  transform: rotateY(0); 
 }
 .loginPage .content .part1 .bigImg img {
   height: 100%;
