@@ -2957,6 +2957,11 @@ header .content .headerTop .auth span {
   font-family: "PoppinsBold";
 }
 
+.mainHeader .content .part1 .shopNow:lang(fr) {
+  font-size: 16px;
+}
+
+
 .mainHeader .content .part2 {
   width: 1000px;
   height: 870px;
