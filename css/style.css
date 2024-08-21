@@ -2942,6 +2942,7 @@ header .content .headerTop .auth span {
   line-height: 30px;
   max-width: 758px;
   margin-bottom: 78px;
+  text-align:justify;
 }
 
 .mainHeader .content .part1 .shopNow {
