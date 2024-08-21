@@ -2947,7 +2947,7 @@ header .content .headerTop .auth span {
 
 .mainHeader .content .part1 .shopNow {
   background: var(--linear-color);
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2958,9 +2958,9 @@ header .content .headerTop .auth span {
   font-family: "PoppinsBold";
 }
 
-.mainHeader .content .part1 .shopNow:lang(fr) {
-  font-size: 16px;
-}
+/* .mainHeader .content .part1 .shopNow:lang(fr) {
+  font-size: 12px;
+} */
 
 
 .mainHeader .content .part2 {
