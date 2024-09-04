@@ -3062,6 +3062,13 @@ header .content .headerTop .auth span {
   border-left: 0.25px solid #707070;
   padding-top: 3px;
 }
+
+html[dir="rtl"] .headerLinks .part1 {
+  border-left:none;
+  padding-right: 12px;
+  border-right: 0.25px solid #707070;
+}
+
 .headerLinks .part2 {
 }
 /*profile*/
@@ -4730,12 +4737,6 @@ footer.orderFooter .content {
   transform: rotateY(180deg);  
 }
 
-[dir="rtl"] .loginPage .content .part1 .bigImg {
-  position: absolute;
-  bottom: 0;
-  right: -250px;
-  transform: rotateY(0); 
-}
 .loginPage .content .part1 .bigImg img {
   height: 100%;
 }
@@ -4760,7 +4761,7 @@ footer.orderFooter .content {
   justify-content: space-between;
   padding: 50px 50px 50px;
 }
-.loginPage.signIn .part1 .bigImgSignIn {
+html[dir="ltr"] .loginPage.signIn .part1 .bigImgSignIn {
   width: 240px;
   position: absolute;
   height: 100%;
@@ -4769,6 +4770,18 @@ footer.orderFooter .content {
   display: flex;
   align-items: flex-end;
 }
+
+html[dir="rtl"] .loginPage.signIn .part1 .bigImgSignIn{
+  width: 240px;
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
 .loginPage.signIn .part1 .bigImgSignIn::before {
   content: "";
   position: absolute;
@@ -4786,6 +4799,9 @@ footer.orderFooter .content {
   transform: rotateY(180deg);
   position: relative;
   z-index: 0;
+}
+html[dir="rtl"] .loginPage.signIn .part1 .bigImgSignIn .imgContent {
+  transform: rotateY(0);
 }
 .loginPage.signIn .part1 .bigImgSignIn img {
   height: 100%;
@@ -4856,8 +4872,8 @@ footer.orderFooter .content {
 @media (max-width: 992px) {
   .loginPage.signIn .part1 .bigImgSignIn {
     display: none;
-  }
-  .loginPage.signIn .part1 .endLogGIn {
+    }  
+    .loginPage.signIn .part1 .endLogGIn {
     display: none;
   }
   .loginPage.signIn .partForm .endLogGIn {
