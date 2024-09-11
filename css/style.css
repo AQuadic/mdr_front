@@ -4016,9 +4016,16 @@ html[dir="rtl"] .headerLinks .part1 {
   }
 }
 /*myOrder*/
+.heading .orderNumber {
+  margin-top:40px;
+  font-weight:bold;
+}
 .myOrder {
   max-width: 1920px;
   margin: auto;
+}
+.myOrder .con {
+  margin:24px;
 }
 .myOrder .content {
 }
@@ -4026,7 +4033,7 @@ html[dir="rtl"] .headerLinks .part1 {
 }
 .tableItems {
   max-width: 996px;
-  margin: 50px 0px 14px;
+  margin: 0px 0px 14px;
 }
 .tableItems thead {
   min-width: 600px;

@@ -264,6 +264,11 @@
                 </div>
               </div>
               <div class="swiper-slide">
+                <video controls class="imgItemSwiper def_img">
+                  <source src="./images/WhatsApp Video 2024-09-11 at 12.19.51_658f22c0.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="swiper-slide">
                 <div class="imgItemSwiper">
                   <img class="def_img" src="./images/itemWatch.png" alt="Watche">
                 </div>
@@ -300,7 +305,7 @@
               MTP-1374D-1AVDF</h2>
             <h3>CASIO - GENERAL
               MTP-1374D-1AVDF</h3>
-            <div class="starsItem">
+            <!-- <div class="starsItem">
               <svg xmlns="http://www.w3.org/2000/svg" width="18.195" height="18.194" viewBox="0 0 18.195 18.194">
                 <path id="starItemDone"
                   d="M11.254,3.576a.9.9,0,0,1,1.685,0l1.883,5.216a.9.9,0,0,0,.842.576h4.628a.886.886,0,0,1,.556,1.586l-3.293,2.963a.881.881,0,0,0-.293.993l1.2,5.1a.9.9,0,0,1-1.372,1.018L12.62,18.187a.91.91,0,0,0-1.046,0L7.1,21.025a.9.9,0,0,1-1.372-1.018l1.2-5.1a.881.881,0,0,0-.293-.993L3.345,10.954A.886.886,0,0,1,3.9,9.368H8.528a.9.9,0,0,0,.842-.576l1.883-5.216Z"
@@ -327,7 +332,7 @@
                   transform="translate(-2.999 -3)" fill="#ededed" />
               </svg>
 
-            </div>
+            </div> -->
             <div class="priceItem">
               <p class="currentPrice">$600</p>
               <p class="sall">$750</p>
@@ -586,18 +591,30 @@
       },
     });
   </script>
-  <script>
-    const img_show = document.getElementById("img_show");
-    const def_img = document.getElementsByClassName("def_img");
-    const ahmed = function () {
-      img_show.src = this.src;
-      img_show.srcset = this.srcset;
-    };
-    for (i = 0; i <= def_img.length; i++) {
-      def_img[i].addEventListener("click", ahmed);
+<script>
+  const productImgContainer = document.querySelector('.productImg');
+  const def_img = document.getElementsByClassName("def_img");
+  const ahmed = function () {
+    productImgContainer.innerHTML = '';
+    if (this.tagName === "IMG") {
+      const newImage = document.createElement("img");
+      newImage.id = "img_show";
+      newImage.src = this.src;
+      productImgContainer.appendChild(newImage);
+    } else if (this.tagName === "VIDEO") {
+      const newVideo = document.createElement("video");
+      newVideo.controls = true;
+      newVideo.src = this.querySelector("source").src;
+      newVideo.autoplay = true;
+      productImgContainer.appendChild(newVideo);
     }
+  };
 
-  </script>
+  for (i = 0; i <= def_img.length; i++) {
+    def_img[i].addEventListener("click", ahmed);
+  }
+  
+</script>
   <script>
     var del = document.getElementById("product-del");
     const add = document.getElementById("product-add");
